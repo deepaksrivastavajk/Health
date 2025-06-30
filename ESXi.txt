@@ -81,5 +81,17 @@ UDtest	Powered Off
 Name	State
 DNS-Server	Powered On
 
+10.35.151.15	
+Name	State
+caas1-vhpc-cod	Powered On
+caas1-vhpc-cod-cnode001	Powered On
+gpfsnode3	Powered Off
+Head Node	Powered On
+hpez_ctl7	Powered Off
+Pbspro HeadNode	Powered On
+testmaster	Powered Off
+testvm	Powered On
+
+
 
 
