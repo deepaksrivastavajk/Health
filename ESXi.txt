@@ -1,0 +1,85 @@
+10.35.151.22	2xIntel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz | 256 GB | 6x4TB + 2x960GB
+==================================
+Name	State
+bootstrap	Powered Off
+bootstrap_par	Powered On
+DSWINSRV	Powered On
+GitLab	Powered On
+gtplabcmp01	Powered On
+gtplabcmp02	Powered On
+gtplabdev01	Powered On
+gtplabdev02	Powered On
+gtplabdev03	Powered On
+gtplabocp01	Powered On
+gtplabocp02	Powered On
+gtplabpoc04	Powered Off
+haproxy_par	Powered On
+infra-node	Powered On
+infra-rhel	Powered On
+Jenkins-server	Powered On
+opennebula	Powered On
+RedhatXeroxTest	Powered On
+repo-server1	Powered Off
+RHEL7	Powered Off
+rhelcl1	Powered On
+rhelcl2	Powered On
+rhelcl3	Powered On
+rhelcl4	Powered On
+rheliscsi	Powered On
+rheltest	Powered Off
+rhelwitness	Powered On
+rhev	Powered On
+satellite-vm	Powered On
+server2 (1)	Powered On
+server26	Powered On
+servera	Powered On
+serverb	Powered On
+serverd	Powered On
+svcnode	Powered On
+
+10.35.151.11	 | 2x AMD EPYC 7453 28-Core Processor | 128 GB | 2x224GB + 7.5 TB + 3x 1.8TB
+==================================
+Name	State
+caas1-vhpc-cod-cnode002	Powered On
+jenkins	Powered On
+k3s-demo01	Powered On
+lsfmaster	Powered On
+lsfnode	Powered On
+masterlab	Powered On
+node 1	Powered Off
+node1	Powered On
+pbsn1	Powered On
+Pbspro node2	Powered On
+testvm1	Powered On
+udtestvm	Powered On
+VMware vCenter Server	Powered On
+
+10.35.151.12	
+Name	State
+caas1-vhpc-cod-cnode003	Powered On
+caas1-vhpc-cod-cnode004	Powered On
+gpfs  node2	Powered Off
+GPFS node 1	Powered Off
+Sge node2	Powered Off
+testnode1	Powered Off
+
+
+10.35.151.13	
+Name	State
+labmaster	Powered On
+PBS head	Powered On
+Pbspro node1	Powered On
+prdrke2-1	Powered On
+prdrke2-2	Powered On
+prdrke2-3	Powered On
+ranchernode	Powered On
+Sge HeadNode	Powered On
+Sge node1	Powered On
+UDtest	Powered Off
+
+10.35.151.14	  2x AMD EPYC 7453 28-Core Processor | 128 GB | 2x224GB +  6x 1.8TB
+Name	State
+DNS-Server	Powered On
+
+
+
