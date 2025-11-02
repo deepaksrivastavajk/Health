@@ -1,0 +1,185 @@
+oc login -u admin -p redhatocp https://api.ocp4.example.com:6443
+cat /usr/local/etc/ocp4.config
+#oc describe is httpd -n openshift
+
+
+
+Question 1)
+ 
+aldrin roonkere
+collins veraster
+armstrong indionce
+jobs sestiver
+wozniak glegunge
+
+oc login -u armstrong -p indionce							Admin of proj apollo & gemini		Grp commander & edit of apollo project
+oc login -u collins -p veraster																	Grp pilot & view of apollo project
+oc login -u aldrin -p roonkere																	Grp pilot & view of apollo project
+oc login -u jobs -p sestiver		Admin of Cluster		
+oc login -u wozniak -p glegunge		Create Proj access		View of proj titan	
+
+
+#rpm -qa httpd*
+#sudo yum install httpd-tools -y
+
+Answer 2) 
+#oc adm policy remove-cluster-role-from-group self-provisioner system:authenticated:oauth
+
+Answer 3) 
+#oc new-project apollo
+#oc new-project manhattan
+#oc new-project gemini
+#oc new-project bluebook
+#oc new-project titan
+
+Answer 5)
+#oc new-project manhattan
+
+Answer 6)
+#oc new-project gru
+#oc new-app --name=minion --image=registry.ocp4.example.com:8443/ubi9/httpd-24:latest
+
+Answer 7)
+
+#oc new-project lerna
+#wget https://k8s.io/examples/application/php-apache.yaml
+#oc create -f php-apache.yaml 
+
+Answer 8)
+
+#oc new-project area51
+#oc new-app --name oxcart --image registry.ocp4.example.com:8443/ubi9/httpd-24:latest
+
+Answer 9) 
+
+lab only
+---------
+#oc new-project acid
+
+podman search docker.io/hello-openshift
+podman pull docker.io/opneshift/hello-openshift
+podman login registry.ocp4.example.com:8443 -u developer -p developer
+podman tag docker.io/opneshift/hello-openshift registry.ocp4.example.com:8443/openshift/hello-openshift
+podman push registry.ocp4.example.com:8443/openshift/hello-openshift
+
+Answer 10)
+
+#oc new-project ascii-movie
+#helm repo add ascii-movie-repo http://helm.ocp4.example.com/charts		# lab only
+
+Answer 11)
+
+#oc new-project math
+#echo redhat-password | base64
+
+Answer 12) 
+#oc new-project math
+#oc new-app --name=qed --image=registry.ocp4.example.com:8443/ubi9/httpd-24:latest
+
+Answer 13)
+#oc new-project apples
+
+Answer 14)
+
+#oc new-app --name=orange --image=registry.ocp4.example.com:8443/redhattraining/gitlab-ce:8.4.3-ce.0
+
+Answer 15)
+
+#oc new-project mercury
+#oc new-app --name atles --image registry.ocp4.example.com:8443/ubi9/httpd-24:latest --dry-run -o yaml > myfile.yaml
+
+Answer 16)
+
+#oc new-project database
+#oc new-project checker
+#oc create deployment mysql --image=registry.ocp4.example.com:8443/rhscl/mysql-80-rhel7:latest --dry-run -o yaml > mysql.yaml
+
+		[student@workstation ~]$ cat mysql.yaml 
+		apiVersion: apps/v1
+		kind: Deployment
+		metadata:
+		  creationTimestamp: null
+		  labels:
+			app: mysql
+		  name: mysqlsource
+		spec:
+		  replicas: 1
+		  selector:
+			matchLabels:
+			  network.openshift.io/policy-group: source
+		  strategy: {}
+		  template:
+			metadata:
+			  creationTimestamp: null
+			  labels:
+				network.openshift.io/policy-group: source
+			spec:
+			  containers:
+			  - image: registry.ocp4.example.com:8443/rhscl/mysql-80-rhel7:latest
+				name: mysql-80-rhel7
+				env:
+				  - name: MYSQL_ROOT_PASSWORD
+					value: redhat
+		[student@workstation ~]$ 
+
+#oc create -f mysql.yaml -n database
+#oc get all -n database
+#oc label ns checker team=devsecops
+#oc get ns checker --show-labels 
+
+		[student@workstation ~]$ cat mysql.yaml
+		apiVersion: apps/v1
+		kind: Deployment
+		metadata:
+		  creationTimestamp: null
+		  labels:
+			app: mysql
+		  name: mysqlclient
+		spec:
+		  replicas: 1
+		  selector:
+			matchLabels:
+			  deploymentb-sql: target
+		  strategy: {}
+		  template:
+			metadata:
+			  creationTimestamp: null
+			  labels:
+				deploymentb-sql: target
+			spec:
+			  containers:
+			  - image: registry.ocp4.example.com:8443/rhscl/mysql-80-rhel7:latest
+				name: mysql-80-rhel7
+				env:
+				  - name: MYSQL_ROOT_PASSWORD
+					value: redhat
+		[student@workstation ~]$ 
+
+#oc create -f mysql.yaml -n checker
+
+Answer 17)
+
+template
+
+Answer 18)
+
+Install "File integrity Operator" with Monitoring enabled
+
+Answer 19) crontab
+#oc new-project elementum
+registry.ocp4.example.com:8443/rhscl/mysql-80-rhel7:latest
+
+Answer 20)
+dump
+ex280-ocp-
+
+Answer 21) 
+#oc new-project page
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+
+registry.ocp4.example.com:8443/ubi9/httpd-24:latest
+
+Answer 22)
+
+#oc new-project mercury
+#oc new-app --name=atlas --image=registry.ocp4.example.com:8443/ubi9/httpd-24:latest 			# till here for exam
